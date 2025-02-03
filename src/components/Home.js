@@ -13,7 +13,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get('http://127.0.0.1:8000/api/equipment/')
+      .get('https://new-backend-wwul.onrender.com/api/equipment/')
       .then((response) => {
         setEquipmentData(response.data);
         setLoading(false);
@@ -55,7 +55,7 @@ const Home = () => {
               {equipment.image && (
                 <Card.Img
                   variant="top"
-                  src={`http://127.0.0.1:8000${equipment.image}`}
+                  src={`https://new-backend-wwul.onrender.com${equipment.image}`}
                   alt={equipment.name}
                   className="img-fluid rounded-top"
                   style={{ objectFit: 'cover', height: '200px' }}

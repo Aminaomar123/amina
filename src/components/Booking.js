@@ -18,7 +18,7 @@ const Bookings = () => {
   // Fetch all bookings
   useEffect(() => {
     axios
-      .get('http://127.0.0.1:8000/api/booking/')
+      .get('https://new-backend-wwul.onrender.com/api/booking/')
       .then((response) => {
         setBookings(response.data);
         setLoading(false);
@@ -41,8 +41,8 @@ const Bookings = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const url = selectedBooking
-      ? `http://127.0.0.1:8000/api/booking/${selectedBooking.id}/`
-      : 'http://127.0.0.1:8000/api/booking/';
+      ? `https://new-backend-wwul.onrender.com/api/booking/${selectedBooking.id}/`
+      : 'https://new-backend-wwul.onrender.com/api/booking/';
     const method = selectedBooking ? 'put' : 'post';
 
     axios[method](url, formData)
