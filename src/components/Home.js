@@ -26,8 +26,7 @@ const Home = () => {
 
   const handleBooking = (id, name) => {
     const formattedName = name.replace(/\s+/g, '-').toLowerCase(); // Replace spaces with hyphens and convert to lowercase
-    // navigate(`/booking/${id}/${formattedName}`);
-    navigate('/booking');
+    navigate(`/booking/${id}/${formattedName}`);
   };
 
   if (loading)
