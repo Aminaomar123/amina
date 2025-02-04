@@ -4,6 +4,7 @@ import { Card, Col, Row, Button, Container, Spinner, Alert } from 'react-bootstr
 import { useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Home.css';
+//amina
 
 const Home = () => {
   const [equipmentData, setEquipmentData] = useState([]);
